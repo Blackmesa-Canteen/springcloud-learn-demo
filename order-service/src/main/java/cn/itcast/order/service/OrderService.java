@@ -5,11 +5,17 @@ import cn.itcast.order.pojo.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Service
 public class OrderService {
 
-    @Autowired
+
     private OrderMapper orderMapper;
+
+    @Autowired
+    public void setOrderMapper(OrderMapper orderMapper) {
+        this.orderMapper = orderMapper;
+    }
 
     public Order queryOrderById(Long orderId) {
         // 1.查询订单
