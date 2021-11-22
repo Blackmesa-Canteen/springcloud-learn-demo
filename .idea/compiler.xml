@@ -9,19 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="user-service" />
         <module name="order-service" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eureka-server" target="8" />
-      <module name="feign-api" target="8" />
-      <module name="gateway" target="8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
-      <module name="feign-api" options="-parameters" />
-      <module name="gateway" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
