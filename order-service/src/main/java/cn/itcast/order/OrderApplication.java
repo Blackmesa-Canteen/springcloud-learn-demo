@@ -3,6 +3,7 @@ package cn.itcast.order;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,7 +15,9 @@ public class OrderApplication {
         SpringApplication.run(OrderApplication.class, args);
     }
 
+    // LoadBalanced 可有多个user-service实例,可采用负载均衡
     @Bean
+    @LoadBalanced
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }

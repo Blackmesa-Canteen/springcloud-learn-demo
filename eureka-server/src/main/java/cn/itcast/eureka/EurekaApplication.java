@@ -6,9 +6,6 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @author Xiaotian
- * @program cloud-demo
- * @description
- * @create 2021-11-22 17:34
  */
 @SpringBootApplication
 @EnableEurekaServer

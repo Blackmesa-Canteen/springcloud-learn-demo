@@ -31,7 +31,8 @@ public class OrderService {
         Order order = orderMapper.findById(orderId);
 
         // 2. 利用RestTemplate发送http请求,查询用户
-        String url = "http://localhost:8081/user/" + order.getUserId();
+        // 使用了Eureka,域名就用微服务名
+        String url = "http://userservice/user/" + order.getUserId();
 
         // 3. 远程调用(通过http)
         User user = restTemplate.getForObject(url, User.class);
