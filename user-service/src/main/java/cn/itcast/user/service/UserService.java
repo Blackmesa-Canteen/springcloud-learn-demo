@@ -5,17 +5,11 @@ import cn.itcast.user.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Service
 public class UserService {
 
-
-    private UserMapper userMapper;
-
     @Autowired
-    public void setUserMapper(UserMapper userMapper) {
-        this.userMapper = userMapper;
-    }
+    private UserMapper userMapper;
 
     public User queryById(Long id) {
         return userMapper.findById(id);
