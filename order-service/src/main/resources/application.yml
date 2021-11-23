@@ -15,6 +15,7 @@ spring:
       server-addr: localhost:8848
       discovery:
         cluster-name: HZ # 集群名称
+        ephemeral: false # 非临时实例: nacos会主动检查这个服务的健康状态,并且会等它恢复
 
 mybatis:
   type-aliases-package: cn.itcast.user.pojo

@@ -7,14 +7,14 @@ spring:
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-  application:
-    name: userservice # 微服务的名称
+#  application:
+#    name: userservice # 微服务的名称
 
-  cloud:
-    nacos:
-      server-addr: localhost:8848
-      discovery:
-        cluster-name: HZ # 集群名称
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848
+#      discovery:
+#        cluster-name: HZ # 集群名称
 
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
