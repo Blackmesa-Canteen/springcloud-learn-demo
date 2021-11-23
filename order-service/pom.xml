@@ -27,6 +27,14 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
 
+        <!--警告Spring Boot Configuration Annotation Processor
+        not configured，但是不影响运行的问题解决 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- 服务发现服务的注册 -->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.cloud</groupId>-->

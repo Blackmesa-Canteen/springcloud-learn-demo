@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="feat: impl Nacos服务治理&#10;&#10;开启Nacos 服务注册发现">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="userservice实现配置从Nacos拉取">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/config/PatternProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +171,7 @@
       <workItem from="1637516421880" duration="1303000" />
       <workItem from="1637517753352" duration="8051000" />
       <workItem from="1637646028275" duration="1009000" />
-      <workItem from="1637647058451" duration="2333000" />
+      <workItem from="1637647058451" duration="4938000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: set project to 0, to code by hands.&#10;&#10;set project to 0, to code by hands.">
       <created>1637517894524</created>
@@ -210,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637646431708</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="userservice实现配置从Nacos拉取">
+      <created>1637652281095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637652281095</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,6 +438,7 @@
     <MESSAGE value="feat: impl RPC&#10;&#10;impl RPC by http JSON" />
     <MESSAGE value="feat: impl Eureka服务治理&#10;&#10;开启eureka server-client 服务注册发现" />
     <MESSAGE value="feat: impl Nacos服务治理&#10;&#10;开启Nacos 服务注册发现" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: impl Nacos服务治理&#10;&#10;开启Nacos 服务注册发现" />
+    <MESSAGE value="userservice实现配置从Nacos拉取" />
+    <option name="LAST_COMMIT_MESSAGE" value="userservice实现配置从Nacos拉取" />
   </component>
 </project>
