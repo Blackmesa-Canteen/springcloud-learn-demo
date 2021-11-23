@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="order-service feign最佳实践实习: 把feign的client api分离成一个单独模块,这样便于维护和多服务复用">
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/itcast/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="学习gateway网关初步">
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/cn/itcast/gateway/filter/AuthorizeFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +195,7 @@
       <workItem from="1637646028275" duration="1009000" />
       <workItem from="1637647058451" duration="5942000" />
       <workItem from="1637660402954" duration="10369000" />
-      <workItem from="1637684168967" duration="2530000" />
+      <workItem from="1637684168967" duration="3602000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: set project to 0, to code by hands.&#10;&#10;set project to 0, to code by hands.">
       <created>1637517894524</created>
@@ -273,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637671086520</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="学习gateway网关初步">
+      <created>1637687226363</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637687226363</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,6 +502,7 @@
     <MESSAGE value="order-service 引入FeignClient,并且尝试设置日志记录级别." />
     <MESSAGE value="order-service feign引入连接池,能够优化点性能" />
     <MESSAGE value="order-service feign最佳实践实习: 把feign的client api分离成一个单独模块,这样便于维护和多服务复用" />
-    <option name="LAST_COMMIT_MESSAGE" value="order-service feign最佳实践实习: 把feign的client api分离成一个单独模块,这样便于维护和多服务复用" />
+    <MESSAGE value="学习gateway网关初步" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习gateway网关初步" />
   </component>
 </project>
