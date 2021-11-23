@@ -1,5 +1,6 @@
 package cn.itcast.order.service;
 
+import cn.itcast.order.clients.UserClient;
 import cn.itcast.order.mapper.OrderMapper;
 import cn.itcast.order.pojo.Order;
 import cn.itcast.order.pojo.User;
@@ -11,10 +12,11 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class OrderService {
 
-
     private OrderMapper orderMapper;
 
-    private RestTemplate restTemplate;
+//    private RestTemplate restTemplate;
+
+    private UserClient userClient;
 
     @Autowired
     public void setOrderMapper(OrderMapper orderMapper) {
@@ -22,8 +24,8 @@ public class OrderService {
     }
 
     @Autowired
-    public void setRestTemplate(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
+    public void setUserClient(UserClient userClient) {
+        this.userClient = userClient;
     }
 
     public Order queryOrderById(Long orderId) {
@@ -32,10 +34,13 @@ public class OrderService {
 
         // 2. 利用RestTemplate发送http请求,查询用户
         // 使用了Eureka,域名就用微服务名
-        String url = "http://userservice/user/" + order.getUserId();
+//        String url = "http://userservice/user/" + order.getUserId();
 
         // 3. 远程调用(通过http)
-        User user = restTemplate.getForObject(url, User.class);
+//        User user = restTemplate.getForObject(url, User.class);
+
+        // 3. Feign RPC
+        User user = userClient.findById(order.getUserId());
 
         order.setUser(user);
         // 4.返回
