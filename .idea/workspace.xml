@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="order-service 引入FeignClient,并且尝试设置日志记录级别.">
+    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="order-service feign引入连接池,能够优化点性能">
+      <change afterPath="$PROJECT_DIR$/feign-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/OrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/clients/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/clients/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/config/DefaultConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/config/DefaultConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/pojo/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/pojo/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +112,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3277311" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign" />
+      <recent name="$PROJECT_DIR$/feign-api/src/main/java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -170,7 +187,7 @@
       <workItem from="1637517753352" duration="8051000" />
       <workItem from="1637646028275" duration="1009000" />
       <workItem from="1637647058451" duration="5942000" />
-      <workItem from="1637660402954" duration="6761000" />
+      <workItem from="1637660402954" duration="8017000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: set project to 0, to code by hands.&#10;&#10;set project to 0, to code by hands.">
       <created>1637517894524</created>
@@ -228,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637668073458</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="order-service feign引入连接池,能够优化点性能">
+      <created>1637669568701</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637669568701</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,6 +478,7 @@
     <MESSAGE value="userservice实现配置从Nacos拉取" />
     <MESSAGE value="userservice实验不同环境(profile)下读取不同配置" />
     <MESSAGE value="order-service 引入FeignClient,并且尝试设置日志记录级别." />
-    <option name="LAST_COMMIT_MESSAGE" value="order-service 引入FeignClient,并且尝试设置日志记录级别." />
+    <MESSAGE value="order-service feign引入连接池,能够优化点性能" />
+    <option name="LAST_COMMIT_MESSAGE" value="order-service feign引入连接池,能够优化点性能" />
   </component>
 </project>

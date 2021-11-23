@@ -1,6 +1,6 @@
 package cn.itcast.order;
 
-import cn.itcast.order.config.DefaultConfiguration;
+import cn.itcast.feign.clients.UserClient;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,9 +9,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+
+
+// 指定加载哪个feignClient客户端
+@EnableFeignClients(clients = UserClient.class)
 @MapperScan("cn.itcast.order.mapper")
 @SpringBootApplication
-@EnableFeignClients(defaultConfiguration = DefaultConfiguration.class)
 public class OrderApplication {
 
     public static void main(String[] args) {
