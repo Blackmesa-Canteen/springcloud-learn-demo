@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="userservice实验不同环境(profile)下读取不同配置">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/clients/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/config/DefaultConfiguration.java" afterDir="false" />
+    <list default="true" id="a4d3e308-28ec-444c-ba7e-9f24e4f66ac9" name="Changes" comment="order-service 引入FeignClient,并且尝试设置日志记录级别.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/OrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/OrderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +170,7 @@
       <workItem from="1637517753352" duration="8051000" />
       <workItem from="1637646028275" duration="1009000" />
       <workItem from="1637647058451" duration="5942000" />
-      <workItem from="1637660402954" duration="5439000" />
+      <workItem from="1637660402954" duration="6761000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: set project to 0, to code by hands.&#10;&#10;set project to 0, to code by hands.">
       <created>1637517894524</created>
@@ -225,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637654866492</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="order-service 引入FeignClient,并且尝试设置日志记录级别.">
+      <created>1637668073458</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637668073458</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,6 +453,7 @@
     <MESSAGE value="feat: impl Nacos服务治理&#10;&#10;开启Nacos 服务注册发现" />
     <MESSAGE value="userservice实现配置从Nacos拉取" />
     <MESSAGE value="userservice实验不同环境(profile)下读取不同配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="userservice实验不同环境(profile)下读取不同配置" />
+    <MESSAGE value="order-service 引入FeignClient,并且尝试设置日志记录级别." />
+    <option name="LAST_COMMIT_MESSAGE" value="order-service 引入FeignClient,并且尝试设置日志记录级别." />
   </component>
 </project>
